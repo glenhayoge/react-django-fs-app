@@ -17,7 +17,7 @@ const TodoList = () => {
 
     // Function to handle adding a new todo
     const handleNewTodo = (newTodo) => {
-        setTodos([...todos, newTodo]); // Append the new todo to the list
+        setTodos([newTodo, ...todos]); // Prepend the new todo to the list
     };
 
     // Function to handle updating an existing todo
